@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+            텍스트:  #E6434343
+            구분영역:  #03596164
+            구분선:  #05596164-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.dev_musashi.onetouch.MainActivity"
+    tools:ignore="ExtraText"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:weightSum="10"
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#1A596164">
+        <View
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:layout_margin="0dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:gravity="top"
+            android:layout_gravity="center"
+            android:fontFamily="@font/noto_sans_kr_bold"
+            android:text="원터치 보드판"
+            android:textSize="13sp"
+            android:textColor="#676767" />
+
+        <View
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>                                                                    <!--원터치보드판-->
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#1A596164"/>                                                                    <!--구분영역-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:background="#66596164" />                                                                    <!--구분선-->
+    <LinearLayout
+        android:layout_weight="4.5"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:weightSum="10"
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#1A596164">
+        <View
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="NestedWeights" />
+
+        <LinearLayout
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_margin="0dp"
+            android:layout_gravity="top"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:layout_gravity="top"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:fontFamily="@font/noto_sans_kr_bold"
+                android:text="촬영 history"
+                android:textColor="#676767" />
+        </LinearLayout>
+
+        <View
+            android:layout_weight="6.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="NestedWeights" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="#66596164"
+            tools:ignore="NestedWeights" />
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/btn_gallery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:padding="8dp"
+            android:background="#03596164"
+            android:src="@drawable/icon_gallery"
+            android:contentDescription="@string/nofile" />
+
+    </LinearLayout>                                                                    <!--촬영history-->
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#66596164"/>                                                            <!--구분선-->
+    <LinearLayout
+        android:layout_weight="15"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+<!--        <TextView-->
+<!--            android:text="보드판 내용이 순차적으로 입력됩니다."-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="#000000"/>-->
+        <ListView
+            android:id="@+id/listview"
+            android:divider="@color/colorWhite"
+            android:dividerHeight="1dp"
+            android:scrollbarThumbVertical="@color/colorWhite"
+            android:scrollbarAlwaysDrawVerticalTrack = "true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000">
+        </ListView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#66596164"/>                                                                    <!--구분영역-->
+    <LinearLayout
+        android:layout_weight="0.25"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#66596164"/>                                                                    <!--구분선-->
+    <LinearLayout
+        android:layout_weight="5"
+        android:weightSum="10"
+        android:background="#1A596164"
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="0.295"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="NestedWeights" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="#66596164"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.505"
+            android:fontFamily="@font/noto_sans_kr_bold"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="보드판 서식입력"
+            android:textColor="#676767" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="#66596164"
+            tools:ignore="NestedWeights" />
+        <View
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="#66596164"
+            tools:ignore="NestedWeights" />
+        <ImageButton
+            android:id="@+id/btn_form_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="#03596164"
+            android:contentDescription="@string/form_add"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_add"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>                                                                    <!--보드판서식입력-->
+    <LinearLayout
+        android:layout_weight="0.25"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#66596164"/>                                                                    <!--구분선-->
+    <HorizontalScrollView
+        android:layout_weight="4.2"
+        android:id="@+id/form_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#1A596164">
+        <LinearLayout
+            android:id="@+id/layout_form_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+    </HorizontalScrollView>                                                      <!--버튼-->
+    <LinearLayout
+        android:layout_weight="0.25"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#66596164"/>                                                                    <!--구분선-->
+    <FrameLayout
+        android:layout_weight="20"
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#1A596164"/>                                                                    <!--보드판영역-->
+    <LinearLayout
+        android:layout_weight="0.25"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#66596164"/>                                                                    <!--구분선-->
+    <LinearLayout
+        android:layout_weight="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#03596164"/>                                                                    <!--구분영역-->
+    <LinearLayout
+        android:layout_weight="7"
+        android:weightSum="10"
+        android:id="@+id/layout_button2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#03596164">
+        <View
+            android:layout_weight="1.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="NestedWeights" />
+        <Button
+            android:layout_weight="7.5"
+            android:id="@+id/btn_capture"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text= "@string/picture"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:padding="0dp"
+            android:fontFamily="@font/noto_sans_kr_bold"
+            android:background="@drawable/roundcorner"/>
+        <View
+            android:layout_weight="1.25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>                                                                    <!--촬영버튼-->
+    <LinearLayout
+        android:layout_weight="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#03596164"/>                                                                    <!--구분영역-->
+    <LinearLayout
+        android:layout_weight="0.25"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#66596164"/>                                                                    <!--구분선-->
+    <ImageView
+        android:adjustViewBounds="true"
+        android:layout_weight="34"
+        android:layout_gravity="center"
+        android:id="@+id/iv_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:contentDescription="@string/cont_description"
+        android:scaleType="fitCenter"/>
+
+</LinearLayout>

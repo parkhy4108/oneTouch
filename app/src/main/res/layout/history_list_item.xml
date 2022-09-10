@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tableTextView"
+        android:text="테이블 기록"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/timeTextView"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:text="시간 기록"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintLeft_toRightOf="@+id/tableTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="end"
+        android:textColor="#FFFFFF"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">One Touch</string>
+    <string name="table_left1">공사명</string>
+    <string name="table_left2">공 종</string>
+    <string name="table_left3">일 자</string>
+    <string name="table_left4">위 치</string>
+    <string name="table_left5">내 용</string>
+    <string name="cont_description">image</string>
+    <string name="history">촬영 History</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="서식A">서식 A</string>
+    <string name="서식B">서식B</string>
+    <string name="서식C">서식C</string>
+    <string name="delete">delete</string>
+    <string name="home">원터치보드판</string>
+    <string name="picture">촬 영</string>
+    <string name="nofile">nofile</string>
+    <string name="저장">저장</string>
+    <string name="삭제">삭제</string>
+    <string name="서식저장">서식 저장</string>
+    <string name="insert_form_name">보드판 서식입력</string>
+    <string name="form_add">서식추가버튼</string>
+
+
+</resources>
+
+

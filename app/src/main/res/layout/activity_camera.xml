@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wrapLinear"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+    <LinearLayout
+        android:layout_weight="8.6"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:id="@+id/first_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+        <View
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:layout_weight="2"
+            android:id="@+id/quality"
+            android:text="고화질"
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorner_camera"/>
+
+        <View
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/btn"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:src="@drawable/camerabtn_inner"
+            android:layout_height="match_parent"
+            android:background="@drawable/roundcorner_camera"
+            android:contentDescription="@string/nofile" />
+
+        <View
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_weight="2"
+            android:id="@+id/flash"
+            android:text="flash"
+            android:textColor="#FFFFFF"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorner_camera"/>
+
+        <View
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/black"/>
+</LinearLayout>
